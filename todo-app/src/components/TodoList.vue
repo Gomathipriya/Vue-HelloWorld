@@ -1,10 +1,6 @@
 <template>
     <div>
-        <ul>
-            <li> TODO A </li>
-            <li> TODO B </li>
-            <li> TODO C </li>
-        </ul>
+        <p> Completed Tasks: {{todos.filter(todo =>{return todo.done === true}).length}}</p>
     </div>
 </template>
 
