@@ -122,12 +122,13 @@ Components
 
 <pre>
 Vue.Component('todo-item',{
-  template: '<li> This is todo list </li>'
+  template: 'li This is todo list /li'
 })
 
-'<ol>
-    <todo-item> </todo-item>
- </ol>'
+ol
+    todo-item /todo-item
+/ol
+</pre>
 
 
 
@@ -136,8 +137,7 @@ Vue.Component('todo-item',{
 
 
 
-
-
+<pre>
 # todo-app
 
 > A Vue.js project
@@ -170,5 +170,5 @@ npm test
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-
+</pre>
 
