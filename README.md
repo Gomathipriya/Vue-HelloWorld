@@ -54,6 +54,8 @@ div id="app-3"
 
 v-for
 
+To add an item to the below list use <code> app4.todos.push({ text: 'New item' }) </code>
+
 <pre>
 div id="app-4"
   ol
@@ -75,3 +77,29 @@ var app4 = new Vue({
 })
 
 </pre>
+
+Handling User Inputs
+====================
+v-on : Attach event listeners to invoke method
+
+<pre>
+div id="app5"
+  p {{message}} /p
+  button v-on:click="reverseMessage" Reverse Message /button
+/div
+ 
+var app5= new Vue({
+  el: "#app5",
+  data: {
+    message: "Hello"
+  },
+  methods: {
+    reverseMessage: function(){
+      this.message = this.message.split('').reverse().join('');
+    }
+  }
+}) 
+
+</pre>
+
+In the above example state of the app is changed without touching the dom
