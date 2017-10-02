@@ -103,3 +103,72 @@ var app5= new Vue({
 </pre>
 
 In the above example state of the app is changed without touching the dom
+
+Two-way binding
+===============
+v-model : Two-way binding between form input and app state
+
+<pre>
+div id="app6"
+  p {{message}} /p
+  input v-model="message"
+ /div 
+</pre>
+
+Components
+==========
+- Small, Self-contained, Reusable
+- View instance with Pre-defined options
+
+<pre>
+Vue.Component('todo-item',{
+  template: '<li> This is todo list </li>'
+})
+
+'<ol>
+    <todo-item> </todo-item>
+ </ol>'
+
+
+
+
+
+
+
+
+
+
+# todo-app
+
+> A Vue.js project
+https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+
